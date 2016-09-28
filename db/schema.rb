@@ -43,7 +43,6 @@ ActiveRecord::Schema.define(version: 20160916174048) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "profile_id"
-    t.index ["profile_id"], name: "index_skills_on_profile_id"
   end
 
 end
