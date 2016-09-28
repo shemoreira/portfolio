@@ -24,6 +24,6 @@ production:
   adpater: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: defhjlddc5iv9l
-  username: bxfqymhqezydxt
+  database: de2n4e7nbqdjq8
+  username: qwjugeptgmfemm
   password: <%= ENV['DATABASE_PASSWORD'] %>
