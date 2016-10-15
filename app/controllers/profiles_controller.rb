@@ -17,6 +17,7 @@ class ProfilesController < ApplicationController
     @profile = Profile.new
     @profile.skills.build
     @profile.jobs.build
+
   end
 
   # GET /profiles/1/edit
@@ -28,7 +29,7 @@ class ProfilesController < ApplicationController
   # POST /profiles.json
   def create
     @profile = Profile.new(profile_params)
-    respond_to do |format|
+      respond_to do |format|
       if @profile.save
         format.html { redirect_to @profile, notice: 'Profile was successfully created.' }
         format.json { render :show, status: :created, location: @profile }

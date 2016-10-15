@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+ .portfolio{
+   border: 1px solid dimgray;
+   border-radius: 55px;
+   box-shadow: dimgray 0.4em 0.4em;
+   padding: 5px 5px 5px 5px;
+ }
+
+ .avatar{
+   align-self: center;
+   margin: 20px 0 20px 39.5%;
+}
+
+ .nome{
+   font-family: sans-serif;
+   font-size: 32px;
+   font-weight: bolder;
+   text-align: center;
+   text-shadow: 2px 5px #c0c0c0;
+   padding: 20px 0 100px 0;
+ }
+
+ img{
+   border-radius: 55px;
+
+ }
