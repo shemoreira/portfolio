@@ -28,6 +28,7 @@ class ProfilesController < ApplicationController
   # POST /profiles
   # POST /profiles.json
   def create
+    debugger
     @profile = Profile.new(profile_params)
       respond_to do |format|
       if @profile.save
@@ -73,6 +74,6 @@ class ProfilesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def profile_params
-    params.require(:profile).permit(:avatar, :name, :email, :github, :bio, skills_attributes: [:id, :name, :years], jobs_attributes: [:id, :title, :description])
+    params.require(:profile).permit(:name, :email, :github, :bio, skills_attributes: [:id, :name, :years], jobs_attributes: [:id, :title, :description])
   end
 end

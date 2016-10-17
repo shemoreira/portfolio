@@ -1,6 +1,5 @@
 <div class="portfolio">
   <div class="avatar">
-    <%= image_tag @profile.avatar.url(:medium) %>
   </div>
 
   <div class="nome">
@@ -12,10 +11,10 @@
   </div>
 
   <div class="quadros">
-      Biografia
-      <p>
-        <%= @profile.bio %>
-      </p>
+    Biografia
+    <p>
+      <%= @profile.bio %>
+    </p>
   </div>
 
   <div class="quadros">
@@ -36,8 +35,8 @@
         <p><%= job.title %></p>
       </div>
       <% end %>
-     <!--<%= link_to "New Job", controller: "jobs", action: "new", id: @profile %>-->
+      <!--<%= link_to "New Job", controller: "jobs", action: "new", id: @profile %>-->
     </div>
-   </div>
+  </div>
 
 </div>
